@@ -1,7 +1,7 @@
 library(shiny)
-port <- Sys.getenv('PORT')
+port <- process.env.PORT
 shiny::runApp(
   appDir = getwd(),
-  host = '0.0.0.0',
+  host = 'null',
   port = as.numeric(port)
 )
